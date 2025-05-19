@@ -40,7 +40,7 @@ The model uses the following features to predict `mpg`:
 
 ### 1. Clone this repository:
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/DavidLiu0619/Mtcars-Flask-Api.git
 cd Mtcars-Flask-Api
 ```
 
@@ -76,10 +76,13 @@ curl -H "Content-Type: application/json" \
 * You can change some of the values to see the prediction change. 
 * Both of the curl commands can be found in the file curl_test.sh.
 * Check to see if you have any docker containers running using
+
   ```bash
   docker container ls
   ```
+
 * stop them through
+  
     ```bash
     docker componse down -v
      ```
