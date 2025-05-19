@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  api:  # ✅ Service is now named 'api'
+    build: .
+    ports:
+      - "5050:5050"
+    volumes:
+      - .:/app
+    environment:
+      - PORT=5050
+
+
