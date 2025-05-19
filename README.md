@@ -1,4 +1,4 @@
-# 🚗 Mtcars Flask API – Homework 3  
+# Mtcars Flask API – Homework 3  
 **Course**: STATS 418  
 **Student**: Hengyuan (David) Liu  
 
@@ -19,13 +19,11 @@ The project is fully containerized using Docker and deployed to **Google Cloud R
 | `Dockerfile` | Instructions to build the Docker image |
 | `docker-compose.yml` | Used to launch the app locally via Docker |
 | `requirements.txt` | List of Python dependencies |
-| `curl_test.sh` | Test Commend
-
-You can change some of the values to see the prediction change. Both of the curl commands can be found in the file curl_test.sh. As usual, check to see if you have any docker containers running using docker container ls and stop them through docker componse down -v
+| `curl_test.sh` | Test Commend Lines
 
 ---
 
-## 🔍 Model Features
+## Model Features
 
 The model uses the following features to predict `mpg`:
 
@@ -38,7 +36,7 @@ The model uses the following features to predict `mpg`:
 
 ---
 
-## 🧪 Local Testing with Docker
+## Local Testing with Docker
 
 ### 1. Clone this repository:
 ```bash
@@ -75,7 +73,18 @@ curl -H "Content-Type: application/json" \
 
 ---
 
-## ☁️ Deployment on Google Cloud Run
+* You can change some of the values to see the prediction change. 
+* Both of the curl commands can be found in the file curl_test.sh.
+* Check to see if you have any docker containers running using
+  ```bash
+  docker container ls
+  ```
+* stop them through
+    ```bash
+    docker componse down -v
+     ```
+
+## Deployment on Google Cloud Run
 
 If deployed, you can test the live API using this command:
 
@@ -91,11 +100,9 @@ curl -X POST \
 {"predicted mpg": 18.4314781529401}
 ```
 
-> ⚠️ If the API is not available, you can rebuild and deploy it by:
+> If the API is not available, you can rebuild and deploy it by:
 > - Building your Docker image  
 > - Pushing to Docker Hub  
 > - Deploying to Google Cloud Run using your own project
 
 ---
-
-You can change some of the values to see the prediction change. Both of the curl commands can be found in the file curl_test.sh. As usual, check to see if you have any docker containers running using docker container ls and stop them through docker componse down -v
