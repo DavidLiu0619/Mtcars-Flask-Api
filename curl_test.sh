@@ -1,6 +1,6 @@
 #!/bin/bash
 
-curl http://localhost:5001/
+curl http://localhost:5050/
 
 # Test the Flask app running on localhost:5050
 curl -H "Content-Type: application/json" -X POST -d '{"wt":3.73,"am":1,"qsec":17.6,"gear":4,"drat":3.07,"cyl":8}' "http://localhost:5050/predict_mpg"
