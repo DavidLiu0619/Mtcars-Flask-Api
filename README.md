@@ -61,10 +61,7 @@ Server is up - Mtcars Flask API running!
 
 Test a prediction:
 ```bash
-curl -H "Content-Type: application/json" \
-     -X POST \
-     -d '{"wt":3.73,"am":1,"qsec":17.6,"gear":4,"drat":3.07,"cyl":8}' \
-     http://localhost:5050/predict_mpg
+curl -H "Content-Type: application/json" -X POST -d '{"wt":3.73,"am":1,"qsec":17.6,"gear":4,"drat":3.07,"cyl":8}' "http://localhost:5050/predict_mpg"
 ```
 **Expected output**:
 ```json
@@ -92,10 +89,7 @@ curl -H "Content-Type: application/json" \
 If deployed, you can test the live API using this command:
 
 ```bash
-curl -X POST \
-     "https://mtcars-flask-app-980752141572.us-central1.run.app/predict_mpg" \
-     -H "Content-Type: application/json" \
-     -d '{"wt":3.73,"am":1,"qsec":17.6,"gear":4,"drat":3.07,"cyl":8}'
+curl -X POST "https://mtcars-flask-app-980752141572.us-central1.run.app/predict_mpg" -H "Content-Type: application/json" -d '{"wt":3.73,"am":1,"qsec":17.6,"gear":4,"drat":3.07,"cyl":8}'
 ```
 
 **Expected output**:
